@@ -22,9 +22,9 @@ A simple Django REST Framework project to collect resume details via API, store 
     python -m venv venv
     
     To activate virtual environment:
-    # Windows
+    ### Windows
     venv\Scripts\activate
-    # mac
+    ### mac
     source venv/bin/activate    
 
 3. Install Dependencies
