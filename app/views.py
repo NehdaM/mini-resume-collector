@@ -58,3 +58,8 @@ def resumeView(request, pk=None):
                 resumes.remove(res)
                 return Response({"message" : "Deletion Successful!"}, status=status.HTTP_204_NO_CONTENT)
         return Response({"error": "Resume Id not found"}, status=status.HTTP_404_NOT_FOUND)
+    
+
+@api_view(["GET"])
+def health_check(request):
+    return Response({"status": "ok"}, status=status.HTTP_200_OK)

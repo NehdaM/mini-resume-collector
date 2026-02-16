@@ -3,5 +3,6 @@ from .views import *
 
 urlpatterns = [
     path("resumes/", resumeView),
-    path("resumes/<int:pk>/", resumeView)
+    path("resumes/<int:pk>/", resumeView),
+    path("health/", health_check)
 ]
